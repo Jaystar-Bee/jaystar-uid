@@ -39,7 +39,6 @@ id(20); // => '62o9Pjao0PU14lUSJP8J'
 
 id(12); // => '6oPJLi183IF1'
 ```
-
  
  ### `jaystar-uid/pattern`
 
