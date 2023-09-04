@@ -1,0 +1,24 @@
+{
+  "name": "jaystar-uid",
+  "version": "1.0.0",
+  "description": "Generate a unique User ID",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaystar-Bee/jaystar-uid.git"
+  },
+  "keywords": [
+    "uid",
+    "jaystar-uid",
+    "jaystar"
+  ],
+  "author": "John Ayilara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaystar-Bee/jaystar-uid/issues"
+  },
+  "homepage": "https://github.com/Jaystar-Bee/jaystar-uid#readme"
+}
