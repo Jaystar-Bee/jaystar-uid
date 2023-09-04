@@ -1,6 +1,6 @@
 var characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
- function id(length = 11){
+ function id(length = 12){
     if(typeof length !== 'number' && Number.isNaN(length)){
         throw new Error('You must provide a number');
     }
