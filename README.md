@@ -21,6 +21,10 @@ There are two "modules" available in `jaystar-uid`:
 ```js
 const id = require('jaystar-uid')
 
+//template
+id(); or id(length);
+
+// Sample
 
 // default id length is 12 e.g:
 
@@ -42,13 +46,14 @@ id(12); // => '6oPJLi183IF1'
 
 ## Usage
 
-> No default parameter value for the pattern module.
-//
 > pattern and separator parameters are required for this module
 
 ```js
 
 const id = require('jaystar-uid/pattern')
+
+// template
+id(pattern, separator);
 
 // Sample
 id('4=3=4=2=4', '=') // => UTWc=Yvj=EErn=2t=zUcU
