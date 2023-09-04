@@ -1,36 +1,55 @@
-# jaystar-ui Package
+# jaystar-uid Package [jaystar-uid ](https://github.com/Jaystar-Bee/jaystar-uid)
 
-
+`jaystar-uid` is an easy way of generating id.   
 
 ## Install
 
 ```
+
 $ npm install --save jaystar-uid
+
 ```
 
 ## Modules
 
 There are two "modules" available in `jaystar-uid`:
 
-#### `jaystar`
+### `jaystar-uid`
 
 ## Usage
 
 ```js
 const id = require('jaystar-uid')
 
-// default id length is 10 e.g:
-id(); //=> 'yB8kPbi0P'
-id(); //=> 'ac84bbb3728'
 
+// default id length is 12 e.g:
+
+id(); // => 'yB8kPbi0PcP0'
+
+id(); // => '2W3phJ7HLss2'
+
+  
 // customize length
-id(16); //=> '8234dbf9a7dcec3b'
-id(25); //=> '4bbb3728b7a00a12209ec5ff5'
-id(32); //=> 'dcbc3e65506a7e6f15d30a357e884432'
+
+id(20); // => '62o9Pjao0PU14lUSJP8J'
+
+id(12); // => '6oPJLi183IF1'
 ```
 
+ 
+ ### `jaystar/pattern`
 
 
+## Usage
 
+> No default parameter value for the pattern module
+> pattern and separator parameters are required for this module
 
-#### `jaystar/pattern`
+```js
+
+const id = require('jaystar-uid/pattern')
+
+// Sample
+id('4=3=4=2=4', '=') // => UTWc=Yvj=EErn=2t=zUcU
+id('4-4-4-4-4', '-') // => LFre-uj3C-1SHL-5B7G-tnSu
+```
