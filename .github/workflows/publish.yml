@@ -8,12 +8,14 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nodejs: [8, 10, 12, 16]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: npm ci
+          node-version: ${{ matrix.nodejs }}
 
   publish-npm:
     needs: build
@@ -22,8 +24,6 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: npm ci
-      - run: npm publish
+          node-version: ${{ matrix.nodejs }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
