@@ -54,7 +54,6 @@ const id = require('jaystar-uid/pattern')
 // template
 id(pattern, separator);
 
-
 // Sample
 id('4=3=4=2=4', '=') // => UTWc=Yvj=EErn=2t=zUcU
 id('4-4-4-4-4', '-') // => LFre-uj3C-1SHL-5B7G-tnSu
