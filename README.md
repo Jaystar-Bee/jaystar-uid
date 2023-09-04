@@ -35,14 +35,13 @@ id(20); // => '62o9Pjao0PU14lUSJP8J'
 
 id(12); // => '6oPJLi183IF1'
 ```
-
  
- ### `jaystar/pattern`
-
+ ### `jaystar-uid/pattern`
 
 ## Usage
 
-> No default parameter value for the pattern module
+> No default parameter value for the pattern module.
+//
 > pattern and separator parameters are required for this module
 
 ```js
